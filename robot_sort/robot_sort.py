@@ -104,8 +104,10 @@ class SortingRobot:
         # Robot can move left or right
         # Robot can pick up an item
         """
+        # Only start loop while light is on 
         self.set_light_on()
         while self.light_is_on():
+            # Turn light off 
             self.set_light_off()
             while self.can_move_right():
                 self.swap_item()
